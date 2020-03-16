@@ -1,0 +1,8 @@
+.nav-bar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fafafa;
+    margin: 0;
+    height: 4rem;
+}
