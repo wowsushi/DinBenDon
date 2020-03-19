@@ -27,11 +27,11 @@ const NavBar = ({ RouteConfig, ...props }: RouteProps & any) => {
     }
 
     return (
-        <div className="nav-bar-container">
+        <nav className="nav-bar-container">
             <ul className="nav-bar-wrapper">
                 {renderNav(RouteConfig)}
             </ul>
-        </div>
+        </nav>
     )
 }
 
