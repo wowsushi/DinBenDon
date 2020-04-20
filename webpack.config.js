@@ -37,7 +37,7 @@ module.exports = {
         port: 9000
     },
     plugins: [
-        // new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './src/index.html',
             title: 'Progressive Web Application'

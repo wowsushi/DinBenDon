@@ -6,7 +6,8 @@ import NavBar from 'components/NavBar';
 import 'normalize.css'
 import './assets/layout.css'
 import Home from 'pages/Home';
-
+import { Provider } from 'react-redux'
+import { store } from 'redux/reducer'
 
 const renderRoute = (routeConfig) => {
     let result = []
@@ -53,4 +54,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-render(<App />, document.getElementById('root'));
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('root'));
